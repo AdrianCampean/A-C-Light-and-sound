@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+/*STILURI DE BAZA*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Poppins', sans-serif;
+	color: #111;
+}
+
+header {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(126,103,26,1) 52%, rgba(186,186,186,1) 100%);
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
+	align-items: center;
+	padding: 30px 10%;
+	
+}
+
+/*LOGO*/
+
+.logo {
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+
+/*NAV BAR*/
+li a {
+	text-decoration: none;
+	color: black;
+}
+
+.navigation {
+	list-style: none;
+	
+}
+
+.navigation li{
+	display: inline-block;
+	padding: 0 20px;
+	color: black;
+}
+
+.navigation li a {
+	transition: all 0.5s ease 0s;
+}
+
+.navigation li a:hover {
+	color: #FFE45B ;
+	letter-spacing: 2px;
+}
+
+
+/*MAIN*/
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: url('img/dj.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
+
+}
+
+.dj {
+	display: flex;
+	flex-direction: row;
+	margin: 0 40px;
+	margin-top: 50px;
+	text-align: justify;
+	color: white;
+	border: 2px solid #474b58;
+	font-size: 12px;
+}
+
+.dj img {
+	width: 320px;
+	height: 280px;
+	position: relative;
+
+
+	
+}
+
+.dj .bg-scris {
+	background: rgba(75, 75, 75, 0.7);
+}
+
+.dj .bg-scris h3 {
+	
+	font-weight: 200;
+	line-height: 30px;
+	margin: 0px 10px;
+}
+
+/*Footer*/ 
+.footer {
+	width: 100%;
+	height: 100px;
+	background-image: url('img/background-gri.jpeg');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0px;
+	color: white;
+}
+.footer img {
+	width: 50px;
+	height: 50px;
+}
+
+@media (max-width: 800px){
+.navigation li{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: auto;
+		width: 100%;
+	}	
+.dj { display: flex;
+	 flex-direction: column;
+	}
+.dj img {
+	margin: auto;
+}
+
+}
